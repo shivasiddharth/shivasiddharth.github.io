@@ -1,31 +1,38 @@
 /* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  height: 100vh;          /* Full viewport height */
   background-color: #f0f0f0;
 }
 
-/* Container styles */
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers the content horizontally */
+  align-items: center; /* Center contents horizontally */
+  justify-content: center; /* Center contents vertically */
   background: #ffffff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 90%;
   max-width: 400px;
+  text-align: center;
 }
 
 /* Image placeholder styles */
 .image-placeholder img {
-  width: 80%; /* Image scales relative to the container */
+  width: 80%; /* Scales relative to the container width */
   max-width: 300px;
   height: auto; /* Maintains aspect ratio */
   margin-bottom: 20px;
@@ -37,18 +44,17 @@ body {
 h1 {
   margin-bottom: 20px;
   font-size: 1.5rem;
-  text-align: center;
 }
 
 /* Form styles */
 form {
   display: flex;
   flex-direction: column;
-  width: 100%; /* Form takes the full width of the container */
+  width: 100%;
 }
 
 label {
-  margin: 10px 0 5px; /* Adds spacing between labels and inputs */
+  margin: 10px 0 5px;
   font-weight: bold;
   text-align: left;
 }
@@ -56,10 +62,9 @@ label {
 input {
   width: 100%;
   padding: 10px;
-  margin-bottom: 15px; /* Adds spacing between input fields */
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-sizing: border-box;
 }
 
 button {
@@ -70,7 +75,7 @@ button {
   color: white;
   font-size: 16px;
   cursor: pointer;
-  width: 100%; /* Button spans the full width of the form */
+  width: 100%;
 }
 
 button:hover {
