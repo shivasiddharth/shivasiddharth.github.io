@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PWA for HTTPS Navigation</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Enter IP Address and Port</h1>
+    <form id="navigateForm">
+      <label for="ipAddress">IP Address:</label>
+      <input type="text" id="ipAddress" name="ipAddress" placeholder="192.168.0.1" required>
+
+      <label for="port">Port:</label>
+      <input type="text" id="port" name="port" placeholder="443" required>
+
+      <button type="submit">Open</button>
+    </form>
+  </div>
+</body>
+</html>
