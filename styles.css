@@ -32,7 +32,7 @@ body {
 
 /* Image placeholder styles */
 .image-placeholder img {
-  width: 30%;            /* Scales proportionally to the container */
+  width: 50%;            /* Scales proportionally to the container */
   max-width: 300px;      /* Restrict the maximum width */
   height: auto;          /* Maintain aspect ratio */
   margin-bottom: 20px;
