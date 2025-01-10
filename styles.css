@@ -1,60 +1,55 @@
-/* General styles */
+/* General reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body to fill the entire viewport */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center;    /* Center vertically */
+  justify-content: center; /* Horizontally center the container */
+  align-items: center;    /* Vertically center the container */
   height: 100vh;          /* Full viewport height */
+  width: 100vw;           /* Full viewport width */
   background-color: #f0f0f0;
+  overflow: hidden;       /* Prevent scrolling */
 }
 
+/* Container to take the full screen */
 .container {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Center contents horizontally */
-  justify-content: center; /* Center contents vertically */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;    /* Center elements horizontally */
+  justify-content: center; /* Center elements vertically */
+  height: 100%; /* Full height of the viewport */
+  width: 100%;  /* Full width of the viewport */
   background: #ffffff;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 400px;
   text-align: center;
 }
 
 /* Image placeholder styles */
 .image-placeholder img {
-  width: 80%; /* Scales relative to the container width */
-  max-width: 300px;
-  height: auto; /* Maintains aspect ratio */
+  width: 30%;            /* Scales proportionally to the container */
+  max-width: 300px;      /* Restrict the maximum width */
+  height: auto;          /* Maintain aspect ratio */
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Heading styles */
-h1 {
-  margin-bottom: 20px;
-  font-size: 1.5rem;
 }
 
 /* Form styles */
 form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%; /* Inputs and button span most of the container width */
+  max-width: 400px;
 }
 
 label {
-  margin: 10px 0 5px;
+  margin: 10px 0 5px; /* Adds spacing between labels and inputs */
   font-weight: bold;
   text-align: left;
 }
@@ -62,7 +57,7 @@ label {
 input {
   width: 100%;
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 15px; /* Adds spacing between input fields */
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -84,14 +79,9 @@ button:hover {
 
 /* Responsive design */
 @media (max-width: 600px) {
-  .container {
-    padding: 15px;
+  .image-placeholder img {
+    width: 50%; /* Increase image width for smaller screens */
   }
-
-  h1 {
-    font-size: 1.2rem;
-  }
-
   button {
     font-size: 14px;
   }
