@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PWA for HTTPS Navigation</title>
@@ -11,14 +10,17 @@
 </head>
 <body>
   <div class="container">
+    <div class="image-placeholder">
+      <img id="placeholderImage" src="https://raw.githubusercontent.com/shivasiddharth/shivasiddharth.github.io/refs/heads/main/stremio-logo-vector.svg" alt="Placeholder" />
+    </div>
     <h1>Enter IP Address and Port</h1>
     <form id="navigateForm">
       <label for="ipAddress">IP Address:</label>
       <input type="text" id="ipAddress" name="ipAddress" placeholder="192.168.0.1" required>
-
+      
       <label for="port">Port:</label>
       <input type="text" id="port" name="port" placeholder="443" required>
-
+      
       <button type="submit">Open</button>
     </form>
   </div>
