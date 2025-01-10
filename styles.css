@@ -73,6 +73,12 @@ button {
   width: 100%;
 }
 
+/* Heading styles */
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
 button:hover {
   background-color: #0056b3;
 }
